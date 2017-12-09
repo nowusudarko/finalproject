@@ -4,8 +4,11 @@
   <meta charset="utf-8">
   <title>phonegap & jquery mobile boilerplate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.mobile.structure.css" />
   <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="index.css">
   
   <script>
     var userAgent = navigator.userAgent + '';
@@ -20,32 +23,24 @@
     }
   </script>
   
-  <script src="js/lib/jquery.js"></script>
+  <script src="jquery.js"></script>
   <!-- your scripts here -->
   <script src="js/app/app.js"></script>
   <script src="js/app/bootstrap.js"></script>
   <script src="js/lib/jquery.mobile.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
   </head>
 
-<body>
+<body style="background-image: url(police-cars.jpg); background-repeat: no-repeat;">
 <div data-role="page">
 <div data-role="header">
         <h1>Single page</h1>
     </div><!-- /header -->
 
-    <div data-role="footer">
-        <h4>Footer content</h4>
-    </div><!-- /footer -->
-
-</div><!-- /page -->
-  </body>
-</html>
-
-
-<!-- <body class="body">
-<link rel="stylesheet" type="text/css" href="index.css">
-<div class="container-fluid">
+    <div class="container-fluid">
     <div class ="col-md-12">
     <div class="col-md-2">
     </div>
@@ -64,13 +59,10 @@
   </div>
 
       <!-- Login / Register Modal-->
-                        <!-- <div class="modal fade login-register-form" style="font-family: serif" role="dialog">
+                        <div class="modal fade login-register-form" style="font-family:serif;" role="dialog">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">
-                                            <span class="glyphicon glyphicon-remove"></span>
-                                        </button>
                                         <ul class="nav nav-tabs">
                                             <li class="active"><a data-toggle="tab" href="#login-form"> Login <span class="glyphicon glyphicon-user"></span></a></li>
                                             <li><a data-toggle="tab" href="#registration-form"> Register <span class="glyphicon glyphicon-pencil"></span></a></li>
@@ -91,7 +83,7 @@
                                                     <div class="checkbox">
                                                         <label><input type="checkbox" name="remember"> Remember me</label>
                                                     </div>
-                                                    <button type="submit" class="btn btn-default">Login</button>
+                                                    <button type="submit" class="btn btn-info">Login</button>
                                                 </form>
                                             </div>
                                             <div id="registration-form" class="tab-pane fade">
@@ -105,16 +97,27 @@
                                                         <input type="email" class="form-control" id="newemail" placeholder="Enter new email" name="newemail">
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="newpwd">Password:</label>
-                                                        <input type="password" class="form-control" id="newpwd" placeholder="New password" name="newpwd">
+                                                        <label for="age">Age:</label>
+                                                        <input type="number" class="form-control" id="age" placeholder="Age" name="age">
                                                     </div>
-                                                    <button type="submit" class="btn btn-default">Register</button>
+                                                    <div class="form-group">
+                                                        <label for="phone">Phone:</label>
+                                                        <input type="text" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <label for="organization">Organization:</label>
+                                                        <input type="text" class="form-control" id="org" placeholder="Name of Organization" name="organization">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-info">Register</button>
                                                 </form>
                                             </div>
 
                                         </div>
                                     </div>
-                               </div>
+                                    <div class="modal-footer">
+                                        <a type="submit" class="btn btn-primary btn-block" data-dismiss="modal">Close</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -122,15 +125,9 @@
   </div>
   </div>
 </div>
+</div><!-- /page -->
+
+  </body>
+</html>
 
 
-
-<script>
-$(document).ready(function(){
-        $("#reg").fadeIn(3000);
-});
-</script>
-
-</body>
-</html> -->
- -->
