@@ -1,8 +1,4 @@
-     body { 
-      background-image: url("police-cars.jpg");
-      background-repeat: no-repeat;
-    }
-    
+
     
     /* On small screens, set height to 'auto' for sidenav and grid */
 
@@ -44,15 +40,14 @@
       }
 
       .reg-page{
-        margin-top: 5px;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
       }
 
       .reg-div{
         background-color: rgba(0,0,0,0.5);
       /*  border: 2px solid black;
       */  
-        margin-top: 150px;
+        margin-top: 200px;
         font-family: serif;
         color: white;
         text-align: center;

@@ -1,44 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <title>phonegap & jquery mobile boilerplate</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery.mobile.structure.css" />
-  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="index.css">
-  
-  <script>
-    var userAgent = navigator.userAgent + '';
-    if (userAgent.indexOf('iPhone') > -1) {
-      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
-      var mobile_system = 'iphone';
-    } else if (userAgent.indexOf('Android') > -1) {
-      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
-      var mobile_system = 'android';
-    } else {
-      var mobile_system = '';
-    }
-  </script>
-  
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="jquery.js"></script>
   <!-- your scripts here -->
   <script src="js/app/app.js"></script>
   <script src="js/app/bootstrap.js"></script>
-  <script src="js/lib/jquery.mobile.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-  </head>
-
-<body style="background-image: url(police-cars.jpg); background-repeat: no-repeat;">
-<div data-role="page">
-<div data-role="header">
-        <h1>Single page</h1>
-    </div><!-- /header -->
+  <style> 
+  </style>
+</head>
+  
+  
+<body>
 
     <div class="container-fluid">
     <div class = "row">
@@ -51,7 +31,7 @@
       <div class="enforcer-border" style="text-align: center;">
         <h1> Enforcer </h1>
       </div>
-      <a class="btn btn-primary btn-sm reg-page" href="#" data-toggle="modal" data-target=".login-register-form">Click Here to Login or Register </a>
+      <a href="report.html" class="btn btn-primary btn-sm reg-page" href="#" data-toggle="modal" data-target=".login-register-form">Click Here to Login or Register </a>
     </div>
 <!--   <div class="col-md-2">
   </div> -->
@@ -82,7 +62,7 @@
                                                     <div class="checkbox">
                                                         <label><input type="checkbox" name="remember"> Remember me</label>
                                                     </div>
-                                                    <button type="submit" class="btn btn-info">Login</button>
+                                                    <button type="submit" class="btn btn-info" >Login</button>
                                                 </form>
                                             </div>
                                             <div id="registration-form" class="tab-pane fade">
@@ -114,7 +94,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a type="submit" class="btn btn-primary btn-block" data-dismiss="modal">Close</a>
+                                        <a type="submit" class="btn btn-primary btn-block" data-dismiss="modal" >Close</a>
                                     </div>
                                 </div>
                             </div>
@@ -123,8 +103,8 @@
   <div class="col-md-2">
   </div>
   </div>
-</div>
-</div><!-- /page -->
+  </div>
+  
 
   </body>
 </html>
