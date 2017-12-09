@@ -4,15 +4,11 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="index.css">
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
   <script src="jquery.js"></script>
-  <!-- your scripts here -->
-  <script src="js/app/app.js"></script>
-  <script src="js/app/bootstrap.js"></script>
   <style> 
   </style>
 </head>
@@ -22,19 +18,14 @@
 
     <div class="container-fluid">
     <div class = "row">
-    <!-- <div class="col-md-2">
-    </div> -->
   <div class="col-md-12 reg-div" id="reg">
-    <!-- <div class="col-md-2">
-    </div> -->
     <div>
       <div class="enforcer-border" style="text-align: center;">
         <h1> Enforcer </h1>
       </div>
-      <a href="report.html" class="btn btn-primary btn-sm reg-page" href="#" data-toggle="modal" data-target=".login-register-form">Click Here to Login or Register </a>
+      <a class="btn btn-primary btn-sm reg-page" href="#" data-toggle="modal" data-target=".login-register-form">Click Here to Login or Register </a>
     </div>
-<!--   <div class="col-md-2">
-  </div> -->
+    <a href="report.html"><button>next</button></a>
   </div>
 
       <!-- Login / Register Modal-->
@@ -43,8 +34,8 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <ul class="nav nav-tabs">
-                                            <li class="active"><a data-toggle="tab" href="#login-form"> Login <span class="glyphicon glyphicon-user"></span></a></li>
-                                            <li><a data-toggle="tab" href="#registration-form"> Register <span class="glyphicon glyphicon-pencil"></span></a></li>
+                                            <li class="active"><a data-toggle="tab" href="#login-form"> Login </a></li>
+                                            <li><a data-toggle="tab" href="#registration-form"> Register </a></li>
                                         </ul>
                                     </div>
                                     <div class="modal-body">
@@ -62,7 +53,7 @@
                                                     <div class="checkbox">
                                                         <label><input type="checkbox" name="remember"> Remember me</label>
                                                     </div>
-                                                    <button type="submit" class="btn btn-info" >Login</button>
+                                                    <button type="submit" class="btn btn-info">Login</button>
                                                 </form>
                                             </div>
                                             <div id="registration-form" class="tab-pane fade">
@@ -104,7 +95,7 @@
   </div>
   </div>
   </div>
-  
+
 
   </body>
 </html>
